@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class ProductManager
+    internal class ProductManager: Person
     {
         public int ID { get; private set; }
         public string FirstName { get; private set; }
@@ -15,15 +15,12 @@ namespace ShopProject
 
         public int Age { get; private set; }
 
-        public ProductManager(string firstName, string lastName, int age)
+        public ProductManager(string firstName, string lastName, int age):base(firstName,lastName,age)
         {
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
         }
         public override string ToString()
         {
-            return String.Format(ID + " " + FirstName + " " + LastName + " " + Age);
+            return String.Format(ID + " " + base.ToString());
         }
     }
 }
