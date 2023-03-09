@@ -13,6 +13,14 @@ namespace ShopProject
         public int OrderID { get; set; }
         public int Quantity { get; set; }
 
+        public ProductOrder(int id, int productId, int orderId, int quantity)
+        {
+            ID = id;
+            ProductID = productId;
+            OrderID = orderId;
+            Quantity = quantity;
+        }
+
         public override string ToString()
         {
             return String.Format(ID + " " + ProductID + " " + OrderID + " " + Quantity);
