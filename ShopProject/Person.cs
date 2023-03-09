@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class HR:Person
+    internal class Person
     {
-        public int ID { get; private set; }
-
         public string FirstName { get; private set; }
 
         public string LastName { get; private set; }
 
         public int Age { get; private set; }
 
-        public HR (string firstName, string lastName, int age):base(firstName,lastName,age)
+        public Person(string firstName, string lastName, int age)
         {
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
         }
+
         public override string ToString()
         {
-            return String.Format(ID + " " + base.ToString());
+            return String.Format(FirstName + " " + LastName + " " + Age);
         }
     }
 }
