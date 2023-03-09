@@ -1,0 +1,6 @@
+Наумов - ProductCategory
+Маренко - Category, Product
+Лісецьуий - Order
+Кисюк - Sales Manager, Client
+Хоменко - Product Manager, HR
+Процун - ProductOrder
