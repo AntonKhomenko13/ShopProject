@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class Order
+    internal class Order : IID
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         public string OrderName { get; set; }
 
@@ -28,7 +28,7 @@ namespace ShopProject
 
         public override string ToString()
         {
-            return String.Format(Id + " " + OrderName + " " + SalesManagerId + " " + ClientId + " " + Sum);
+            return String.Format(ID + " " + OrderName + " " + SalesManagerId + " " + ClientId + " " + Sum);
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿namespace ShopProject
 {
-    internal class ProductManager: Person
+    internal class ProductManager: Person, IID
     {
-        public int ID { get; private set; }
+        public int ID { get; set; }
         public string FirstName { get; private set; }
 
         public string LastName { get; private set; }

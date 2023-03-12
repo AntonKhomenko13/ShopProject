@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class ProductCategory
+    internal class ProductCategory : IID
     {
         public int ID { get; set; }
 

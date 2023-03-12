@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class HR:Person
+    internal class HR:Person, IID
     {
-        public int ID { get; private set; }
+        public int ID { get; set; }
 
         public string FirstName { get; private set; }
 
