@@ -1,6 +1,6 @@
 Наумов - ProductCategory
 Маренко - Category, Product
 Лісецьуий - Order, Activity Diagram
-Кисюк - Sales Manager, Client
+Кисюк - Sales Manager, Client, DBItem
 Хоменко - Product Manager, HR
 Процун - ProductOrder
