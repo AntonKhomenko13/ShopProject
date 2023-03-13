@@ -1,22 +1,16 @@
 ﻿namespace ShopProject
 {
-    internal class Client
+    internal class Client : Person
     {
-        public int ID { get; private set; }
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public int Age { get; private set; }
+        public int ID { get; set; }
+        public int FirstName { get; set; }
+        public int LastName { get; set; }
+        public int Age { get; set; }
 
-        public Client(string firstName, string lastName, int age)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-        }
-
+        public Client(string firstName, string lastName, int age) : base(firstName, lastName, age) { }
         public override string ToString()
         {
-            return String.Format(ID + " " + FirstName + " " + LastName + " " + Age);
+            return String.Format($"{ID} {base.ToString()}");
         }
     }
 }
