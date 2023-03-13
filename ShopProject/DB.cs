@@ -2,15 +2,15 @@
 {
     internal class DB
     {
-        DBItem<Category> DBCategory { get; set; } = new DBItem<Category>();
-        DBItem<Client> DBClient { get; set; } = new DBItem<Client>();
-        DBItem<HR> DBHR { get; set; } = new DBItem<HR>();
-        DBItem<Order> DBOrder { get; set; } = new DBItem<Order>();
-        DBItem<Product> DBProduct { get; set; } = new DBItem<Product>();
-        DBItem<ProductCategory> DBProductCategory { get; set; } = new DBItem<ProductCategory>();
-        DBItem<ProductManager> DBProductManager { get; set; } = new DBItem<ProductManager>();
-        DBItem<ProductOrder> DBProductOrder { get; set; } = new DBItem<ProductOrder>();
-        DBItem<SalesManager> DBSalesManager { get; set; } = new DBItem<SalesManager>();
+        public DBItem<Category> DBCategory { get; set; } = new DBItem<Category>();
+        public DBItem<Client> DBClient { get; set; } = new DBItem<Client>();
+        public DBItem<HR> DBHR { get; set; } = new DBItem<HR>();
+        public DBItem<Order> DBOrder { get; set; } = new DBItem<Order>();
+        public DBItem<Product> DBProduct { get; set; } = new DBItem<Product>();
+        public DBItem<ProductCategory> DBProductCategory { get; set; } = new DBItem<ProductCategory>();
+        public DBItem<ProductManager> DBProductManager { get; set; } = new DBItem<ProductManager>();
+        public DBItem<ProductOrder> DBProductOrder { get; set; } = new DBItem<ProductOrder>();
+        public DBItem<SalesManager> DBSalesManager { get; set; } = new DBItem<SalesManager>();
         public DB()
         {
             Initialize();
