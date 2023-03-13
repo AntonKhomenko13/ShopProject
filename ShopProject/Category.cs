@@ -1,6 +1,6 @@
 ﻿namespace ShopProject;
 
-public class Category
+public class Category : IID
 {
     public int ID { get; set; }
     public string Name { get; set; }

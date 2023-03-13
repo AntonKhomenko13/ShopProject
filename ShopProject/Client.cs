@@ -1,6 +1,6 @@
 ﻿namespace ShopProject
 {
-    internal class Client : Person
+    internal class Client : Person, IID
     {
         public int ID { get; set; }
         public int FirstName { get; set; }
