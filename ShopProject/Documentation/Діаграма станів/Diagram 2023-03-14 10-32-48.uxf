@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>13</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLState</id><coordinates><x>65</x><y>481</y><w>234</w><h>143</h></coordinates><panel_attributes>Main Menu
+--
+HR Menu
+Product Manager Menu
+Sales Manager Menu
+Exit
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>429</x><y>481</y><w>234</w><h>143</h></coordinates><panel_attributes>HR Menu
+--
+Product Manager CRUD Menu
+Sales Manager CRUD Menu
+HR Services Menu
+Exit
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>910</x><y>325</y><w>234</w><h>143</h></coordinates><panel_attributes>Product Manager CRUD Menu
+--
+Create
+Read
+Update
+Delete
+Exit
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>910</x><y>481</y><w>234</w><h>143</h></coordinates><panel_attributes>Sales Manager CRUD Menu
+--
+Create
+Read
+Update
+Delete
+Exit
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>910</x><y>637</y><w>234</w><h>143</h></coordinates><panel_attributes>HR Services Menu
+--
+Get sales manager orders
+Get average age employees
+Exit
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>286</x><y>533</y><w>169</w><h>52</h></coordinates><panel_attributes>lt=-&gt;
+HR Menu</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>286</x><y>559</y><w>169</w><h>52</h></coordinates><panel_attributes>lt=-&gt;
+Exit</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>338</y><w>286</w><h>208</h></coordinates><panel_attributes>lt=-&gt;
+Product Manager CRUD Menu</panel_attributes><additional_attributes>10;140;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>520</y><w>286</w><h>65</h></coordinates><panel_attributes>lt=-&gt;
+Sales Manager CRUD Menu</panel_attributes><additional_attributes>10;20;200;30</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>559</y><w>286</w><h>169</h></coordinates><panel_attributes>lt=-&gt;
+HR Services Menu</panel_attributes><additional_attributes>10;10;200;110</additional_attributes></element><element><id>UMLState</id><coordinates><x>1235</x><y>325</y><w>117</w><h>26</h></coordinates><panel_attributes>Create</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1235</x><y>364</y><w>117</w><h>26</h></coordinates><panel_attributes>Read</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1235</x><y>403</y><w>117</w><h>26</h></coordinates><panel_attributes>Update</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1235</x><y>442</y><w>117</w><h>26</h></coordinates><panel_attributes>Delete</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1131</x><y>325</y><w>130</w><h>65</h></coordinates><panel_attributes>lt=-&gt;
+Create</panel_attributes><additional_attributes>10;30;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1131</x><y>351</y><w>130</w><h>65</h></coordinates><panel_attributes>lt=-&gt;
+Read</panel_attributes><additional_attributes>10;30;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1131</x><y>390</y><w>130</w><h>52</h></coordinates><panel_attributes>lt=-&gt;
+Update</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1131</x><y>416</y><w>130</w><h>65</h></coordinates><panel_attributes>lt=-&gt;
+Delete</panel_attributes><additional_attributes>10;20;80;30</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>156</x><y>364</y><w>26</w><h>26</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>156</x><y>377</y><w>39</w><h>130</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>156</x><y>715</y><w>26</w><h>26</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>156</x><y>611</y><w>65</w><h>130</h></coordinates><panel_attributes>lt=-&gt;
+Exit</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>
