@@ -1,4 +1,4 @@
-Наумов - ProductCategory
+Наумов - ProductCategory, packet diagram
 Маренко - Category, Product
 Лісецьуий - Order, Activity Diagram
 Кисюк - Sales Manager, Client, DBItem
