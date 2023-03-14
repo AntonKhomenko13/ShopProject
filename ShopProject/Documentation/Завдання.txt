@@ -1,6 +1,6 @@
 Наумов - ProductCategory, packet diagram
 Маренко - Category, Product, State diagram
 Лісецьуий - Order, Activity Diagram
-Кисюк - Sales Manager, Client, DBItem
+Кисюк - Sales Manager, Client, DBItem, Sequence diagram
 Хоменко - Product Manager, HR
 Процун - ProductOrder
