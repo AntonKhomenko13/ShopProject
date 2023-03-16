@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject
+﻿namespace ShopProject
 {
-    internal class HrMenu: AbstractMenu
+    internal class HrMenu : AbstractMenu
     {
         ConsoleColor defaultColor;
         protected override void Init()

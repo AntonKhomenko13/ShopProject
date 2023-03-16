@@ -30,13 +30,16 @@
             {
                 case 1:
                     Console.WriteLine("HR Menu");
+                    hrMenu.Flag = true;
                     hrMenu.Run();
                     break;
                 case 2:
+                    //productManager.Flag = true;
                     Console.WriteLine("Product Manager Menu");
                     break;
                 case 3:
                     Console.WriteLine("Sales Manager Menu");
+                    salesManagerMenu.Flag = true;
                     salesManagerMenu.Run();
                     break;
                 case 4:
