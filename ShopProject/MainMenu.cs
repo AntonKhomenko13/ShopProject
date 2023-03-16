@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject
+﻿namespace ShopProject
 {
     internal class MainMenu : AbstractMenu
     {
         HrMenu hrMenu;
-
-
+        SalesManagerMenu salesManagerMenu;
+        
         ConsoleColor defaultColor;
 
-        public MainMenu(HrMenu hrMenu)
+        public MainMenu(HrMenu hrMenu, SalesManagerMenu salesManagerMenu)
         {
             this.hrMenu = hrMenu;
+            this.salesManagerMenu = salesManagerMenu;
         }
 
         protected override void Init()
@@ -31,10 +26,10 @@ namespace ShopProject
             Console.WriteLine("4 - Exit");
 
             int menuNumber = int.Parse(Console.ReadLine());
-            switch(menuNumber)
+            switch (menuNumber)
             {
                 case 1:
-                    Console.WriteLine("HR Menu"); 
+                    Console.WriteLine("HR Menu");
                     hrMenu.Run();
                     break;
                 case 2:
@@ -42,6 +37,7 @@ namespace ShopProject
                     break;
                 case 3:
                     Console.WriteLine("Sales Manager Menu");
+                    salesManagerMenu.Run();
                     break;
                 case 4:
                     Flag = false;
