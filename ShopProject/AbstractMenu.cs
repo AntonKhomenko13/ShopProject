@@ -1,9 +1,8 @@
-﻿using System;
-namespace ShopProject
+﻿namespace ShopProject
 {
     internal abstract class AbstractMenu
     {
-        protected bool Flag { get; set; } = true;
+        public bool Flag { get; set; } = true;
 
         public void Run()
         {
@@ -19,5 +18,3 @@ namespace ShopProject
         protected abstract void Idle();
     }
 }
-
-
