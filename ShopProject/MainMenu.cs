@@ -4,7 +4,6 @@
     {
         HrMenu hrMenu;
         SalesManagerMenu salesManagerMenu;
-        
         ConsoleColor defaultColor;
 
         public MainMenu(HrMenu hrMenu, SalesManagerMenu salesManagerMenu)
@@ -29,21 +28,29 @@
             switch (menuNumber)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("HR Menu");
                     hrMenu.Flag = true;
                     hrMenu.Run();
+                    Console.Clear();
                     break;
                 case 2:
-                    //productManager.Flag = true;
+                    Console.Clear();
                     Console.WriteLine("Product Manager Menu");
+                    //productManager.Flag = true;
+                    ////productManager.Run();
+                    Console.Clear();
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Sales Manager Menu");
                     salesManagerMenu.Flag = true;
                     salesManagerMenu.Run();
+                    Console.Clear();
                     break;
                 case 4:
                     Flag = false;
+                    Console.Clear();
                     break;
                 case 5:
                     Console.WriteLine("Input the right number!");
