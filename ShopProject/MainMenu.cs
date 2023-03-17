@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject
+﻿namespace ShopProject
 {
     internal class MainMenu : AbstractMenu
     {
         HrMenu hrMenu;
-
-
+        SalesManagerMenu salesManagerMenu;
+        ProductManagerMenu productManagerMenu;
         ConsoleColor defaultColor;
 
-        public MainMenu(HrMenu hrMenu)
+        public MainMenu(HrMenu hrMenu, SalesManagerMenu salesManagerMenu)
         {
             this.hrMenu = hrMenu;
+            this.salesManagerMenu = salesManagerMenu;
+        }
+
+        public MainMenu(ProductManagerMenu productManagerMenu)
+        {
+            this.productManagerMenu = productManagerMenu;
         }
 
         protected override void Init()
@@ -31,20 +31,32 @@ namespace ShopProject
             Console.WriteLine("4 - Exit");
 
             int menuNumber = int.Parse(Console.ReadLine());
-            switch(menuNumber)
+            switch (menuNumber)
             {
                 case 1:
-                    Console.WriteLine("HR Menu"); 
+                    Console.Clear();
+                    Console.WriteLine("HR Menu");
+                    hrMenu.Flag = true;
                     hrMenu.Run();
+                    Console.Clear();
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("Product Manager Menu");
+                    productManagerMenu.Flag = true;
+                    productManagerMenu.Run();
+                    Console.Clear();
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Sales Manager Menu");
+                    salesManagerMenu.Flag = true;
+                    salesManagerMenu.Run();
+                    Console.Clear();
                     break;
                 case 4:
                     Flag = false;
+                    Console.Clear();
                     break;
                 case 5:
                     Console.WriteLine("Input the right number!");
