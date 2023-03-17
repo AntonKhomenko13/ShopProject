@@ -4,12 +4,18 @@
     {
         HrMenu hrMenu;
         SalesManagerMenu salesManagerMenu;
+        ProductManagerMenu productManagerMenu;
         ConsoleColor defaultColor;
 
         public MainMenu(HrMenu hrMenu, SalesManagerMenu salesManagerMenu)
         {
             this.hrMenu = hrMenu;
             this.salesManagerMenu = salesManagerMenu;
+        }
+
+        public MainMenu(ProductManagerMenu productManagerMenu)
+        {
+            this.productManagerMenu = productManagerMenu;
         }
 
         protected override void Init()
@@ -37,8 +43,8 @@
                 case 2:
                     Console.Clear();
                     Console.WriteLine("Product Manager Menu");
-                    //productManager.Flag = true;
-                    ////productManager.Run();
+                    productManagerMenu.Flag = true;
+                    productManagerMenu.Run();
                     Console.Clear();
                     break;
                 case 3:
