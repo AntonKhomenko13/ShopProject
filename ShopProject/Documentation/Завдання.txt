@@ -4,3 +4,12 @@
 Кисюк - Sales Manager, Client, DBItem, Sequence diagram
 Хоменко - Product Manager, HR
 Процун - ProductOrder
+
+
+
+Наумов - ProductManagerMenu	
+Маренко - HrMenu
+Лісецький - main menu
+Кисюк - SalesManagerMenu
+Хоменко - ProductCRUDMenu
+Процун - SalesManagerCRUDMenu
