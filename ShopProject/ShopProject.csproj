@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Діаграма класів\**" />
+    <EmbeddedResource Remove="Діаграма класів\**" />
+    <None Remove="Діаграма класів\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Documentation\Діаграма послідовності\" />
   </ItemGroup>
 
