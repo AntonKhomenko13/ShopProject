@@ -6,42 +6,32 @@ using System.Threading.Tasks;
 
 namespace ShopProject
 {
-    internal class MainMenu : AbstractMenu
+    internal class HrMenu: AbstractMenu
     {
-        HrMenu hrMenu;
-
-
         ConsoleColor defaultColor;
-
-        public MainMenu(HrMenu hrMenu)
-        {
-            this.hrMenu = hrMenu;
-        }
-
         protected override void Init()
         {
             defaultColor = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Green;
         }
         protected override void Idle()
         {
-            Console.WriteLine("1 - HR Menu");
-            Console.WriteLine("2 - Product Manager Menu");
-            Console.WriteLine("3 - Sales Manager Menu");
+            Console.WriteLine("1 - Product Manager CRUD Menu");
+            Console.WriteLine("2 - Sales Manager CRUD Menu");
+            Console.WriteLine("3 - HR Services Menu");
             Console.WriteLine("4 - Exit");
 
             int menuNumber = int.Parse(Console.ReadLine());
-            switch(menuNumber)
+            switch (menuNumber)
             {
                 case 1:
-                    Console.WriteLine("HR Menu"); 
-                    hrMenu.Run();
+                    Console.WriteLine("Product Manager CRUD Menu");
                     break;
                 case 2:
-                    Console.WriteLine("Product Manager Menu");
+                    Console.WriteLine("Sales Manager CRUD Menu");
                     break;
                 case 3:
-                    Console.WriteLine("Sales Manager Menu");
+                    Console.WriteLine("HR Services Menu");
                     break;
                 case 4:
                     Flag = false;
