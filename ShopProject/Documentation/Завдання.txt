@@ -8,8 +8,8 @@
 
 
 Наумов - ProductManagerMenu	
-Маренко - HrMenu
-Лісецький - main menu
+Маренко - ProductCRUDMenu 
+Лісецький - HRServicesMenu
 Кисюк - SalesManagerMenu
-Хоменко - ProductCRUDMenu
+Хоменко - HrMenu
 Процун - SalesManagerCRUDMenu
