@@ -17,6 +17,7 @@ internal class ProductCRUDMenu : AbstractMenu
 
     protected override void Init()
     {
+        Flag = true;
         Console.Clear();
         defaultColor = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.DarkGreen;

@@ -1,32 +1,37 @@
 ﻿namespace ShopProject
 {
-    internal class ProductManagerMenu : AbstractMenu
+    internal class HrMenu : AbstractMenu
     {
         ConsoleColor defaultColor;
         protected override void Init()
         {
+            Flag = true;
             defaultColor = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.ForegroundColor = ConsoleColor.Green;
         }
         protected override void Idle()
         {
-            Console.WriteLine("1 - Product CRUD Menu");
-            Console.WriteLine("2 - Product Manager Services Menu");
-            Console.WriteLine("3 - Exit");
+            Console.WriteLine("1 - Product Manager CRUD Menu");
+            Console.WriteLine("2 - Sales Manager CRUD Menu");
+            Console.WriteLine("3 - HR Services Menu");
+            Console.WriteLine("4 - Exit");
 
             int menuNumber = int.Parse(Console.ReadLine());
             switch (menuNumber)
             {
                 case 1:
-                    Console.WriteLine("Product CRUD Menu");
+                    Console.WriteLine("Product Manager CRUD Menu");
                     break;
                 case 2:
-                    Console.WriteLine("Product Manager Services Menu");
+                    Console.WriteLine("Sales Manager CRUD Menu");
                     break;
                 case 3:
-                    Flag = false;
+                    Console.WriteLine("HR Services Menu");
                     break;
                 case 4:
+                    Flag = false;
+                    break;
+                case 5:
                     Console.WriteLine("Input the right number!");
                     break;
             }
