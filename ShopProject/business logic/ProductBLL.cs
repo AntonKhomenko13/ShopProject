@@ -15,5 +15,11 @@
             DBItem<Product> dbProduct = db.DBProduct;
             dbProduct.AddItem(product);
         }
+        public Product GetByID(int id)
+        {
+            Product result = default(Product);
+            db.DBProduct
+            return null;
+        }
     }
 }
