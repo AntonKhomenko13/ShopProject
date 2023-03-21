@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLGeneric</id><coordinates><x>650</x><y>360</y><w>130</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+MainMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>470</x><y>440</y><w>130</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+HrMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>610</x><y>440</y><w>200</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+ProductManagerMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>820</x><y>440</y><w>180</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+SalesManagerMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>620</x><y>530</y><w>190</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+ProductCRUDMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>390</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>390</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;50;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>390</y><w>230</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>210;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>470</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>430</x><y>530</y><w>180</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+HRServicesMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>390</x><y>340</y><w>160</w><h>40</h></coordinates><panel_attributes>symbol=artifact
+AbstractMenu.cs</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>470</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;60;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>370</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>370</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;70;70</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>350</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;110;30</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>350</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;170;90</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>260</y><w>450</w><h>200</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;80;10;20;430;20;430;180</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>370</y><w>340</w><h>290</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;270;320;270;320;200</additional_attributes></element></diagram>
