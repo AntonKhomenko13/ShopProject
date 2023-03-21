@@ -5,6 +5,7 @@
         ConsoleColor defaultColor;
         protected override void Init()
         {
+            Flag = true;
             defaultColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
         }
