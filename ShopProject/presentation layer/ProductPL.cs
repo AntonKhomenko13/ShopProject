@@ -1,4 +1,4 @@
-﻿namespace ShopProject
+namespace ShopProject
 {
     internal class ProductPL
     {
