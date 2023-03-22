@@ -3,8 +3,8 @@
     internal class Client : Person, IID
     {
         public int ID { get; set; }
-        public int FirstName { get; set; }
-        public int LastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public int Age { get; set; }
 
         public Client(string firstName, string lastName, int age) : base(firstName, lastName, age) { }
