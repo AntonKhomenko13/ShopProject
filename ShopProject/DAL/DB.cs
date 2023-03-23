@@ -48,7 +48,7 @@
         }
         private void ClientInitialize()
         {
-            Client client1 = new Client("Petro", "Petrenko", 20);
+            Client client1 = new Client("Petro", "Petrenkoryk", 20);
             DBClient.AddItem(client1);
             Client client2 = new Client("Sergiy", "Sergiyenko", 25);
             DBClient.AddItem(client2);

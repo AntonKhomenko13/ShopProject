@@ -22,7 +22,7 @@ namespace ShopProject
         }
         public override string ToString()
         {
-            return string.Format(ClientFirstName + " " + ClientLastName + " " + OrderName + " " + Sum);
+            return string.Format($"{ClientFirstName} {ClientLastName} \t {OrderName} \t {Sum}");
         }
     }
 }
