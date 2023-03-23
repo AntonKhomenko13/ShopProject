@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject
+﻿namespace ShopProject
 {
     internal class SalesManagerCRUDMenu : AbstractMenu
     {
@@ -41,7 +35,7 @@ namespace ShopProject
                     Console.WriteLine("Exit");
                     Flag = false;
                     break;
-                case 6: 
+                case 6:
                     Console.WriteLine("Input the right number!");
                     break;
             }

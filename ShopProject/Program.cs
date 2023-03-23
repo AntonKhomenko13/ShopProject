@@ -7,12 +7,14 @@ DB db = new DB();
 
 SMServicesBLL smServicesBLL = new SMServicesBLL(db);
 ClientBLL clientBLL = new ClientBLL(db);
+OrderBLL orderBLL = new OrderBLL(db);
 
 SMServivesPL smServivesPL = new SMServivesPL(smServicesBLL);
 ClientPL clientPL = new ClientPL(clientBLL);
+OrderPL orderPL = new OrderPL(orderBLL);
 
 SalesManagerServicesMenu salesManagerServicesMenu = new SalesManagerServicesMenu(smServivesPL);
-OrderCRUDMenu orderCRUDMenu = new OrderCRUDMenu();
+OrderCRUDMenu orderCRUDMenu = new OrderCRUDMenu(orderPL);
 ClientCRUDMenu clientCRUDMenu = new ClientCRUDMenu(clientPL);
 
 HrMenu hrMenu = new HrMenu();

@@ -31,12 +31,14 @@
                     Console.WriteLine("Get Client Orders");
                     smServivesPL.GetClientOrders();
                     Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 2:
                     Console.Clear();
                     Console.WriteLine("Get Client Sum");
                     smServivesPL.GetClientSum();
                     Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 3:
                     Flag = false;
