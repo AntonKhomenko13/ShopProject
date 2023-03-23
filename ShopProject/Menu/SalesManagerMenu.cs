@@ -4,6 +4,13 @@ namespace ShopProject
 {
     internal class SalesManagerMenu : AbstractMenu
     {
+        SalesManagerServicesMenu SalesManagerServicesMenu;
+
+        public SalesManagerMenu(SalesManagerServicesMenu salesManagerServicesMenu)
+        {
+            SalesManagerServicesMenu = salesManagerServicesMenu;
+        }
+
         ConsoleColor defaultColor;
         ClientCRUDMenu clientCRUDMenu;
 
@@ -37,11 +44,12 @@ namespace ShopProject
                     break;
                 case 3:
                     Console.WriteLine("Sales Manager Services Menu");
+                    SalesManagerServicesMenu.Run();
                     break;
                 case 4:
                     Flag = false;
                     break;
-                case 5:
+                default:
                     Console.WriteLine("Input the right number!");
                     break;
             }
