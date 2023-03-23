@@ -20,6 +20,8 @@
             ProductInitialize();
             CategoryInitialize();
             ProductCategoryInitialize();
+            ClientInitialize();
+            OrderInitialize();
         }
         private void ProductInitialize()
         {
@@ -43,6 +45,28 @@
             DBProductCategory.AddItem(productCategory2);
             ProductCategory productCategory3 = new ProductCategory(2, 1);
             DBProductCategory.AddItem(productCategory3);
+        }
+        private void ClientInitialize()
+        {
+            Client client1 = new Client("Petro", "Petrenko", 20);
+            DBClient.AddItem(client1);
+            Client client2 = new Client("Sergiy", "Sergiyenko", 25);
+            DBClient.AddItem(client2);
+            Client client3 = new Client("Volodimir", "Volodumiryk", 18);
+            DBClient.AddItem(client3);
+        }
+        private void OrderInitialize()
+        {
+            Order order1 = new Order("Order1", 1, 1, 200);
+            DBOrder.AddItem(order1);
+            Order order2 = new Order("Order2", 1, 2, 300);
+            DBOrder.AddItem(order2);
+            Order order3 = new Order("Order3", 1, 3, 400);
+            DBOrder.AddItem(order3);
+            Order order4 = new Order("Order4", 1, 1, 100);
+            DBOrder.AddItem(order4);
+            Order order5 = new Order("Order5", 1, 2, 50);
+            DBOrder.AddItem(order5);
         }
     }
 }
