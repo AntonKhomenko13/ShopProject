@@ -1,8 +1,17 @@
-﻿namespace ShopProject
+﻿using ShopProject.Menu;
+
+namespace ShopProject
 {
     internal class SalesManagerMenu : AbstractMenu
     {
         ConsoleColor defaultColor;
+        ClientCRUDMenu clientCRUDMenu;
+
+        public SalesManagerMenu(ClientCRUDMenu clientCRUDMenu)
+        {
+            this.clientCRUDMenu = clientCRUDMenu;
+        }
+
         protected override void Init()
         {
             Flag = true;
@@ -21,6 +30,7 @@
             {
                 case 1:
                     Console.WriteLine("Client CRUD Menu");
+                    clientCRUDMenu.Run();
                     break;
                 case 2:
                     Console.WriteLine("Order CRUD Menu");
