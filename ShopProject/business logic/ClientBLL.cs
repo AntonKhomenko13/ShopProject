@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject.business_logic
+﻿namespace ShopProject.business_logic
 {
     internal class ClientBLL
     {
         DB db;
 
-        public ClientBLL(DB db) 
+        public ClientBLL(DB db)
         {
             this.db = db;
         }

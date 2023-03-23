@@ -4,13 +4,11 @@ namespace ShopProject.Menu
 {
     internal class ClientCRUDMenu : AbstractMenu
     {
-        public Client Client { get; set; }
         ClientPL clientPL;
         ConsoleColor defaultColor;
 
-        public ClientCRUDMenu(Client client, ClientPL clientPL)
+        public ClientCRUDMenu(ClientPL clientPL)
         {
-            Client = client;
             this.clientPL = clientPL;
         }
 
