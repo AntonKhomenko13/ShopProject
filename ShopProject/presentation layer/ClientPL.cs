@@ -1,9 +1,4 @@
 ﻿using ShopProject.business_logic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopProject.presentation_layer
 {
@@ -68,7 +63,7 @@ namespace ShopProject.presentation_layer
             }
             else
             {
-                Console.Write(oldItem.FirstName + " " +  oldItem.LastName + " " + oldItem.Age + " | Is it Ok?(y/n): ");
+                Console.Write(oldItem.FirstName + " " + oldItem.LastName + " " + oldItem.Age + " | Is it Ok?(y/n): ");
                 if ("y" == Console.ReadLine())
                 {
                     clientFirstName = oldItem.FirstName;
