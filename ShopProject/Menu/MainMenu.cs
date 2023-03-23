@@ -3,19 +3,15 @@
     internal class MainMenu : AbstractMenu
     {
         HrMenu hrMenu;
-        SalesManagerMenu salesManagerMenu;
         ProductManagerMenu productManagerMenu;
+        SalesManagerMenu salesManagerMenu;
         ConsoleColor defaultColor;
 
-        public MainMenu(HrMenu hrMenu, SalesManagerMenu salesManagerMenu)
+        public MainMenu(HrMenu hrMenu, ProductManagerMenu productManagerMenu, SalesManagerMenu salesManagerMenu)
         {
             this.hrMenu = hrMenu;
-            this.salesManagerMenu = salesManagerMenu;
-        }
-
-        public MainMenu(ProductManagerMenu productManagerMenu)
-        {
             this.productManagerMenu = productManagerMenu;
+            this.salesManagerMenu = salesManagerMenu;
         }
 
         protected override void Init()

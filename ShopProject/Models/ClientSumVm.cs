@@ -21,7 +21,7 @@ namespace ShopProject
         }
         public override string ToString()
         {
-            return string.Format(FirstName + " " + LastName + " " + Sum);
+            return string.Format(FirstName + " " + LastName + "\t" + Sum);
         }
     }
 }
