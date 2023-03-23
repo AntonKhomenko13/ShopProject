@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ShopProject
 {
     internal class Order : IID
@@ -28,7 +22,7 @@ namespace ShopProject
 
         public override string ToString()
         {
-            return String.Format(ID + " " + OrderName + " " + SalesManagerId + " " + ClientId + " " + Sum);
+            return String.Format($"{ID} \t {OrderName} \t {SalesManagerId} \t {ClientId} \t {Sum}");
         }
     }
 }
