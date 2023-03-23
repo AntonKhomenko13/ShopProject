@@ -40,31 +40,36 @@ namespace ShopProject.Menu
                     Console.Clear();
                     Console.WriteLine("Create");
                     clientPL.CreateClient();
-                    Console.WriteLine();
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 2:
                     Console.Clear();
                     Console.WriteLine("Get Client By ID");
                     clientPL.GetClientByID();
-                    Console.WriteLine();
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 3:
                     Console.Clear();
                     Console.WriteLine("Get All Clients");
                     clientPL.GetAllClients();
-                    Console.WriteLine();
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 4:
                     Console.Clear();
                     Console.WriteLine("Update");
                     clientPL.UpDateClient();
-                    Console.WriteLine();
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 5:
                     Console.Clear();
                     Console.WriteLine("Delete");
                     clientPL.DeleteClient();
-                    Console.WriteLine();
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case 6:
                     Console.Clear();
