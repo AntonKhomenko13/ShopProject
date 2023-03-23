@@ -1,20 +1,12 @@
-﻿using ShopProject.business_logic;
-using ShopProject.presentation_layer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShopProject.presentation_layer;
 
 namespace ShopProject.Menu
 {
     internal class ClientCRUDMenu : AbstractMenu
     {
-        ConsoleColor defaultColor;
-        
         public Client Client { get; set; }
-
         ClientPL clientPL;
+        ConsoleColor defaultColor;
 
         public ClientCRUDMenu(Client client, ClientPL clientPL)
         {
@@ -30,7 +22,6 @@ namespace ShopProject.Menu
         protected override void Init()
         {
             Flag = true;
-            Console.Clear();
             defaultColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkRed;
         }
@@ -38,10 +29,11 @@ namespace ShopProject.Menu
         protected override void Idle()
         {
             Console.WriteLine("1 - Create");
-            Console.WriteLine("2 - Read");
-            Console.WriteLine("3 - Update");
-            Console.WriteLine("4 - Delete");
-            Console.WriteLine("5 - Exit");
+            Console.WriteLine("2 - Get Client By ID");
+            Console.WriteLine("3 - Get All Clients");
+            Console.WriteLine("4 - Update");
+            Console.WriteLine("5 - Delete");
+            Console.WriteLine("6 - Exit");
 
             int menuNumber = int.Parse(Console.ReadLine() ?? string.Empty);
             switch (menuNumber)
@@ -50,23 +42,34 @@ namespace ShopProject.Menu
                     Console.Clear();
                     Console.WriteLine("Create");
                     clientPL.CreateClient();
+                    Console.WriteLine();
                     break;
                 case 2:
                     Console.Clear();
-                    Console.WriteLine("Read");
+                    Console.WriteLine("Get Client By ID");
                     clientPL.GetClientByID();
+                    Console.WriteLine();
                     break;
                 case 3:
                     Console.Clear();
-                    Console.WriteLine("Update");
-                    clientPL.UpDateClient();
+                    Console.WriteLine("Get All Clients");
+                    clientPL.GetAllClients();
+                    Console.WriteLine();
                     break;
                 case 4:
                     Console.Clear();
-                    Console.WriteLine("Delete");
-                    clientPL.DeleteClient();
+                    Console.WriteLine("Update");
+                    clientPL.UpDateClient();
+                    Console.WriteLine();
                     break;
                 case 5:
+                    Console.Clear();
+                    Console.WriteLine("Delete");
+                    clientPL.DeleteClient();
+                    Console.WriteLine();
+                    break;
+                case 6:
+                    Console.Clear();
                     Flag = false;
                     break;
                 default:
@@ -75,6 +78,5 @@ namespace ShopProject.Menu
                     break;
             }
         }
-
     }
 }
