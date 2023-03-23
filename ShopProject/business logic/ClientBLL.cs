@@ -31,6 +31,7 @@
             result = db.DBClient.Update(oldItem, newItem);
             return result;
         }
+
         public bool DeleteClient(Client client)
         {
             bool result = false;
