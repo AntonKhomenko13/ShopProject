@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopProject
+﻿namespace ShopProject
 {
-    internal class SalesManagerServicesMenu: AbstractMenu
+    internal class SalesManagerServicesMenu : AbstractMenu
     {
         SMServivesPL smServivesPL;
-
         ConsoleColor defaultColor;
 
         public SalesManagerServicesMenu(SMServivesPL smServivesPL)
@@ -23,14 +16,14 @@ namespace ShopProject
             defaultColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Cyan;
         }
+
         protected override void Idle()
         {
-            Console.Clear();
             Console.WriteLine("1 - Get Client Orders");
             Console.WriteLine("2 - Get Client Sum");
             Console.WriteLine("3 - Exit");
 
-            int menuNumber = int.Parse(Console.ReadLine());
+            int menuNumber = int.Parse(Console.ReadLine() ?? string.Empty);
             switch (menuNumber)
             {
                 case 1:
@@ -54,6 +47,7 @@ namespace ShopProject
                     break;
             }
         }
+
         protected override void CleanUp()
         {
             Console.ForegroundColor = defaultColor;

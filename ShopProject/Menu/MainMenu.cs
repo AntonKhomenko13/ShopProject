@@ -20,6 +20,7 @@
             defaultColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
+
         protected override void Idle()
         {
             Console.WriteLine("1 - HR Menu");
@@ -27,7 +28,7 @@
             Console.WriteLine("3 - Sales Manager Menu");
             Console.WriteLine("4 - Exit");
 
-            int menuNumber = int.Parse(Console.ReadLine());
+            int menuNumber = int.Parse(Console.ReadLine() ?? string.Empty);
             switch (menuNumber)
             {
                 case 1:
@@ -60,6 +61,7 @@
                     break;
             }
         }
+
         protected override void CleanUp()
         {
             Console.ForegroundColor = defaultColor;

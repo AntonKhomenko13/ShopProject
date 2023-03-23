@@ -4,19 +4,16 @@ namespace ShopProject
 {
     internal class SalesManagerMenu : AbstractMenu
     {
-        SalesManagerServicesMenu SalesManagerServicesMenu;
-
-        public SalesManagerMenu(SalesManagerServicesMenu salesManagerServicesMenu)
-        {
-            SalesManagerServicesMenu = salesManagerServicesMenu;
-        }
-
-        ConsoleColor defaultColor;
         ClientCRUDMenu clientCRUDMenu;
+        OrderCRUDMenu orderCRUDMenu;
+        SalesManagerServicesMenu salesManagerServicesMenu;
+        ConsoleColor defaultColor;
 
-        public SalesManagerMenu(ClientCRUDMenu clientCRUDMenu)
+        public SalesManagerMenu(ClientCRUDMenu clientCRUDMenu, OrderCRUDMenu orderCRUDMenu, SalesManagerServicesMenu salesManagerServicesMenu)
         {
             this.clientCRUDMenu = clientCRUDMenu;
+            this.orderCRUDMenu = orderCRUDMenu;
+            this.salesManagerServicesMenu = salesManagerServicesMenu;
         }
 
         protected override void Init()
@@ -25,6 +22,7 @@ namespace ShopProject
             defaultColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Blue;
         }
+
         protected override void Idle()
         {
             Console.WriteLine("1 - Client CRUD Menu");
@@ -36,15 +34,19 @@ namespace ShopProject
             switch (menuNumber)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("Client CRUD Menu");
                     clientCRUDMenu.Run();
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("Order CRUD Menu");
+                    orderCRUDMenu.Run();
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Sales Manager Services Menu");
-                    SalesManagerServicesMenu.Run();
+                    salesManagerServicesMenu.Run();
                     break;
                 case 4:
                     Flag = false;
@@ -54,6 +56,7 @@ namespace ShopProject
                     break;
             }
         }
+
         protected override void CleanUp()
         {
             Console.ForegroundColor = defaultColor;
